@@ -444,7 +444,7 @@ const themeKeys=Object.keys(THEMES);
 const allThemes=themeKeys.concat(['Lainnya']);
 let DATA,units,flat=[],edges=[],coMap={},nodeVal={},totProc=0,totSub=0,totGrp=0,NETHL=null,SKHL=null;
 var BASELINE=null;
-var LIVE_CSV_URL='https://docs.google.com/spreadsheets/d/e/2PACX-1vTl3sVLjk1wDjM0ehioQac9YHQ1Z9BrjMP3RE93fMNnV4taOchXqyjIcRcYBgwH2BYdP_r7TZjATGpX/pub?gid=1606933796&single=true&output=csv';
+var LIVE_CSV_URL='https://docs.google.com/spreadsheets/d/e/2PACX-1vQeyVIV9ZMgfeyTAdkNuy1nIRVcn89gSm3SmxNbvSyu0ooIzMnRrT-TYAZqiiruBA/pub?gid=830318978&single=true&output=csv';
 const COLORS=[];for(let i=0;i<14;i++){COLORS.push('hsl('+Math.round(180+i*17)+','+(46+i%3*4)+'%,'+(i%2?44:54)+'%)');}
 function clean(s){if(s==null)return'';s=String(s);s=s.replace(/[​‌‍﻿�]/g,'');s=s.replace(/[\x00-\x1f]/g,' ');s=s.replace(/\s+/g,' ').trim();s=s.replace(/\?+$/,'').trim();return s;}
 function code(s){if(s==null)return'';return String(s).replace(/[​﻿\x00-\x1f]/g,'').trim();}
